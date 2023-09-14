@@ -1,0 +1,142 @@
+/* 
+#FFDDE2
+#0047E0
+#EE6C4D
+#33312E
+#8CBCB9
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #FFDDE2;
+}
+
+.header {
+  padding: 2rem;
+  background-color: #0047E0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header p {
+  font-size: 1.3rem;
+  color: #FFDDE2;
+  font-weight: bold;
+}
+
+.header input {
+  border: none;
+  padding: .5rem 1rem;
+  min-width: 300px;
+  border-radius: 0px;
+  font-size: 1rem;
+}
+
+.warning-card {
+  padding: 1rem 2rem;
+  background-color: #EE6C4D;
+  color: #33312E;
+  font-weight: bold;
+
+}
+
+.countries {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  min-width: 200px;
+  gap: 1rem;
+  background-color: #33312E;
+  color: #FFDDE2;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+
+.card span {
+  margin: 1rem;
+  margin-right: auto;
+}
+
+.card button {
+  padding: 1rem;
+  border: 1px solid #33312E;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.card button:hover {
+  background-color: #8CBCB9;
+}
+
+.country {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.description {
+  padding: 1rem;
+  background-color: #33312E;
+  min-width: 300px;
+  color: #FFDDE2;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+.description h2 {
+  margin-bottom: .3rem;
+}
+
+
+
+.description div {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.description span {
+  font-weight: bold;
+
+}
+
+.description h4 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.description li {
+  list-style: none;
+  margin-bottom: .3rem;
+}
+
+.description td {
+  border-bottom: 1px solid #8cbcb910;
+  width: 120px;
+  padding: .3rem;
+}
+
+.weather {
+  margin-top: 2rem;
+}

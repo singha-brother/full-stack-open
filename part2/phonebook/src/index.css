@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100vw;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.inputContainer {
+  display: flex;
+  gap : 1rem;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+.notification {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  border-left: 3px solid red;
+  padding: 10px 20px;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+input {
+  padding: .4rem;
+
+}
+
+button {
+  padding: .4rem 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid grey;
+  color: grey;
+  border-radius: 100px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.btn-delete {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  max-width: 600px;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+caption {
+  padding: 10px;
+}
