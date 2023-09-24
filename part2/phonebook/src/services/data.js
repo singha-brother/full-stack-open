@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const baseUrl = 'http://127.0.0.1:3001/persons'
+// const baseUrl = 'http://127.0.0.1:3001/persons'
+const baseUrl = '/api/persons'
 
 ///// TESTING WITH ASYNC AWAIT SYNTAX
 //////////////////////////////////////
@@ -18,7 +19,7 @@ const createNumber = async (newNumber) => {
     const response = await axios.post(baseUrl, newNumber)
     return response.data
   } catch (error) {
-    throw new Error(`💥️ Error in adding new number 💥️`)
+    throw new Error(`💥️ ${error.response.data.message} 💥️`)
   }
 }
 
@@ -27,7 +28,7 @@ const updateNumber = async (id, newNumber) => {
     const response = await axios.put(`${baseUrl}/${id}`, newNumber)
     return response.data
   } catch (error) {
-    throw new Error(`💥️ Error in updating number 💥️`)
+    throw new Error(`💥️ ${error.response.data.message} 💥️`)
   }
 }
 

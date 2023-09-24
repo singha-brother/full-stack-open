@@ -1,0 +1,12 @@
+GET http://127.0.0.1:3000/api/blogs
+
+###
+POST http://127.0.0.1:3000/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Animal Farm",
+  "author": "George Owell def",
+  "url": "http://example.com",
+  "likes": "200"
+}

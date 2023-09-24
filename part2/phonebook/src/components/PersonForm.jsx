@@ -31,7 +31,9 @@ const PersonForm = ({ persons, setPersons, setNotification }) => {
             setName('')
             setNumber('')
           })
-          .catch((err) => console.log(err.message))
+          .catch((err) => {
+            setNotification(`${err.message}`)
+          })
       }
       return
     }
@@ -43,7 +45,10 @@ const PersonForm = ({ persons, setPersons, setNotification }) => {
         setName('')
         setNumber('')
       })
-      .catch((err) => console.log(err.message))
+      .catch((err) => {
+        console.log(err)
+        setNotification(`${err.message}`)
+      })
   }
   return (
     <>
